@@ -53,9 +53,13 @@ linkModel.createTable().catch((err) => {
 });
 
 app.use(express.json());
+app.use(express.static('public'));
 
 const linkRoutes = require('./routes/linkRoutes')(pool);
+const pageRoutes = require('./routes/pageRoutes')(pool);
+
 app.use('/api/links', linkRoutes);
+app.use('/', pageRoutes);
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
