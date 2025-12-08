@@ -1,4 +1,4 @@
-# TinyURL – URL Shortener
+# TinyLink – URL Shortener
 
 A simple URL shortener service that converts long URLs into short, shareable links.
 
@@ -10,7 +10,7 @@ A simple URL shortener service that converts long URLs into short, shareable lin
 
 ## Tech Stack
 - Node.js / Express  
-- MongoDB (or any database)  
+- Postgresql 
 
 ## Installation
 ```bash
